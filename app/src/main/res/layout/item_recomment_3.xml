@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#cacfa1ed"
+             android:padding="@dimen/padding_default_min_min">
+
+    <ImageView
+        android:id="@+id/item_frag_recommend_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="#4f92c9"
+        android:src="@mipmap/ic_tree"/>
+
+    <TextView
+        android:id="@+id/item_frag_recommend_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/padding_default_min"
+        android:text="姓名"
+        android:textColor="@color/balck"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/txt_size_default_min_min_size"/>
+
+</FrameLayout>
