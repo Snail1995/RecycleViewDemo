@@ -12,14 +12,12 @@ import org.json.JSONObject;
 public class Item {
     private String imageUrl;
     private String name;
-    private String flvUrl;
 
 
     public static Item createItmfromJson(JSONObject json) {
         Item ret = new Item();
         ret.name = json.optString("myname");
         ret.imageUrl = json.optString("smallpic");
-        ret.flvUrl = json.optString("flv");
         return ret;
     }
 
@@ -39,11 +37,4 @@ public class Item {
         this.name = name;
     }
 
-    public String getFlvUrl() {
-        return flvUrl;
-    }
-
-    public void setFlvUrl(String flvUrl) {
-        this.flvUrl = flvUrl;
-    }
 }
